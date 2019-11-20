@@ -31,6 +31,8 @@ function handleGame(ev) {
   userNumberValue;
   if (randomNumber === parseInt(userNumberValue)) {
     clue.innerHTML = "Has ganado campeona!!!";
+  } else if (parseInt(userNumberValue) < 1 || parseInt(userNumberValue) > 100) {
+    clue.innerHTML = "El número debe estar entre 1 y 100.";
   } else if (randomNumber < parseInt(userNumberValue)) {
     clue.innerHTML = "Demasiado alto";
   } else if (randomNumber > parseInt(userNumberValue)) {
@@ -40,3 +42,7 @@ function handleGame(ev) {
 
 tryButton.addEventListener("click", handleGame);
 console.log(randomNumber);
+
+// Bucle para intentos
+
+const rounds = document.querySelector(".js-rounds");
