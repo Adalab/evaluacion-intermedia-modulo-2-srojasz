@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: lightblue;
+  font-family: Helvetica, sans-serif;
+}
+
+.title {
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form__input {
+  width: 300px;
+  line-height: 20px;
+  background-color: lightgray;
+  border-radius: 100px;
+  margin: 20px 0;
+}
+
+.form__button {
+  width: 100px;
+  background-color: lightseagreen;
+  line-height: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+.game-info__style {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px black;
+  line-height: 45px;
+  font-size: 16px;
+}
